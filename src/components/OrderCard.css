@@ -9,6 +9,10 @@
 	border-radius: 2rem;
 	padding: 0.8rem;
 	box-shadow: 0.2rem 0.2rem 0.5rem gray;
+	transition: all 0.2s ease-out;
+}
+.card__wrapper:hover{
+	transform: scale(1.07);
 }
 .card_words{
 	font-size: 1.5rem;
@@ -24,6 +28,10 @@
 	margin: 1rem;
 	cursor: pointer;
 	border: none;
+	transition: all 0.2s ease-out;
+}
+.card-button:hover{
+	background-color: black;
 }
 .card__wrapper .cardImage{
 	width: 27vw;
