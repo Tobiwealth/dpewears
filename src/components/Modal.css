@@ -1,0 +1,125 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  top: 75px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1rem;
+  z-index: 999999;
+}
+
+.modalContainer {
+  width: 400px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 0;
+  padding-bottom: 3rem;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.title h3{
+  padding-bottom: 0.8rem;
+}
+.title img{
+  width: 20rem;
+  height: 12rem;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 3rem;
+}
+.body p{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.label h3{
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+.fa{
+  color:green;
+  font-size: 1.8rem;
+  padding-left: 0.7rem;
+}
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 9rem;
+  height: 2.5rem;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+@media screen and (max-width: 650px) {
+  /*.modalBackground{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }*/
+}
+@media screen and (max-width: 400px) {
+  .modalContainer {
+    width: 80vw;
+    height: auto;
+
+  }
+  .title img{
+    width: 60vw;
+  }
+  .modalContainer .footer button {
+    width: 32vw;
+  }
+  .modalContainer .body {
+    font-size: 0.8rem;
+  }
+}

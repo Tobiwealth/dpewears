@@ -1,0 +1,32 @@
+.card_container{
+	padding: 3rem;
+	padding-top: 7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(227, 231, 233, 1);
+}
+.card_heading h1 {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	line-height: 2rem;
+}
+.cardlist{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 2rem;
+	grid-row-gap: 3rem;
+}
+@media screen and (max-width: 1150px) {
+	.cardlist{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 650px){
+	.cardlist{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
